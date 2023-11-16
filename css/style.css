@@ -106,7 +106,6 @@ strong{
 
 .titulos{
     text-align: center;
-    /* margin: 1rem; */
     padding: 1rem;
 }
 
@@ -306,6 +305,14 @@ form span{
         text-align: center;
     }
 
+    .contenedor-datos{
+        display: flex;
+    }
+
+    .datos-utilidad{
+        width: calc(50% - 1rem);
+    }
+
     
 }
 
@@ -388,12 +395,15 @@ form span{
         width: calc(50% - 1rem);
     }
 
-    .contenedor-datos{
+    .contenedor-introduccion{
         display: flex;
+        flex-direction: row;
     }
 
-    .datos-utilidad{
-        width: calc(50% - 1rem);
+    footer{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
     }
 
     .contenedor-transporte{
@@ -417,6 +427,12 @@ form span{
     }
 
     .contenedor-imagenDesktop{
+        display: flex;
+        margin: 1rem;
+        width: calc(50% - 1rem);
+    }
+
+    .contenedor-videoDesktop{
         display: flex;
         margin: 1rem;
         width: calc(50% - 1rem);
