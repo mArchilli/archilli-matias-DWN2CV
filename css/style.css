@@ -18,6 +18,26 @@
     border-radius: 5px;
 }
 
+.agradecimiento {
+    margin-top: 50px;
+}
+
+.volver-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffb347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.mainGracias{
+    text-align: center;
+    margin: 5rem;
+}
+
 body{
     background-image: url("../img/trama.jpg");
     background-repeat: repeat;
