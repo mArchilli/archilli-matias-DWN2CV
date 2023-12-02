@@ -6,105 +6,98 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="recursos/jquery.min.js"></script>
-	<script src="recursos/jquery_cycle.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
-	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <title>Egipto - Contacto</title>
 </head>
 <body>
     <div class="principal">
-        <ul class="navbar">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="ciudades.html">Ciudades</a></li>
-            <li><a href="transporte.html">Transporte</a></li>
-            <li><a href="hospedaje.html">Hospedaje</a></li>
-            <li><a href="contacto.html" id="NavSeleccionado">Contacto</a></li>
-        </ul>
-        <h1 class="header-contacto">Formulario de Contacto</h1>
 
-        <div class="contenedor-formularioDesktop">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="ciudades.html">Ciudades</a></li>
+                    <li><a href="transporte.html">Transporte</a></li>
+                    <li><a href="hospedaje.html">Hospedaje</a></li>
+                    <li><a href="contacto.html" id="NavSeleccionado">Contacto</a></li>
+                </ul>
+            </nav>
+            <h1 class="header-contacto">Formulario de Contacto</h1>
+        </header>
 
-            <div class="contenedor-imagenDesktop">
-                <img class="border-image" src="../img/contacto/imagen-formulario.png" alt="Imagen de Egipto">
-            </div>
+        <main>
 
-            <div class="formularioContacto">
-                <div class="contenedor-headerForm">
-                    <h2 class="titulos">Contactanos!</h2>
-                    <p class="textos">Si tenes alguna consulta puntual, completa el formulario y nos pondremos en contacto con vos.</p>
+            <section class="formulario">
+                <div class="contenedor-formularioDesktop">
+                    <div class="contenedor-imagenDesktop">
+                        <img class="border-image" src="../img/contacto/imagen-formulario.png" alt="Imagen de Egipto">
+                    </div>
+                    <div class="formularioContacto">
+                        <div class="contenedor-headerForm">
+                            <h2 class="titulos">Contáctanos</h2>
+                            <p class="textos">Si tienes alguna consulta puntual, completa el formulario y nos pondremos en contacto contigo.</p>
+                        </div>
+                        <form action="http://recursos.grodriguez.com.ar/FORM/" method="post" enctype="multipart/form-data">
+                            <div class="contenedor-input">
+                                <span>Nombre</span>
+                                <input type="text" name="nombre" placeholder="Ingrese su Nombre" class="inputForm" required/>
+                            </div>
+                            <div class="contenedor-input">
+                                <span>Email</span>
+                                <input type="text" name="email" placeholder="ejemplo@mail.com" class="inputForm" required/>
+                            </div>
+                            <div class="contenedor-input">
+                                <span>Tipo de consulta</span>
+                                <select name="tipoConsulta" class="inputForm" required>
+                                    <option value="" selected disabled>Seleccionar opción</option>
+                                    <option value="ciudades">Ciudades</option>
+                                    <option value="transporte">Transporte</option>
+                                    <option value="hospedaje">Hospedaje</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </div>
+                            <div class="contenedor-input">
+                                <label for="consulta">En caso de que sea necesario, puedes adjuntarnos una imagen del hotel en cuestión. El formato aceptado es JPG y PNG.</label>
+                                <br>
+                                <input type="file" id="consulta" name="consulta" accept="img/jpg, img/png">
+                            </div>
+                            <div class="contenedor-input">
+                                <span>Consulta</span>
+                                <textarea name="consulta" id="color" required></textarea>
+                            </div>
+                            <div class="botones">
+                                <input type="submit" id="enviar" value="Enviar" class="btnForm"/>
+                                <input type="reset" id="borrar" value="Borrar" class="btnForm"/>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                
-                <form action="http://recursos.grodriguez.com.ar/FORM/" method="post" enctype="multipart/form-data">
-                <!--<form action="gracias.html" method="post" enctype="multipart/form-data">-->
-                    <div class="contenedor-input">
-                        <span>Nombre</span>
-                        <input type="text" name="nombre" placeholder="Ingrese su Nombre" class="inputForm" required/>
-                    </div>
-                    
-                    <div class="contenedor-input">
-                        <span>Email</span>
-                        <input type="text" name="email" placeholder="ejemplo@mail.com" class="inputForm" required/>
-                    </div>
-                    
-                    <div class="contenedor-input">
-                        <span>Tipo de consulta</span>
-                        <select name="tipoConsulta" class="inputForm" required>
-                            <option value="" selected disabled>Seleccionar opción</option>
-                            <option value="ciudades">Ciudades</option>
-                            <option value="transporte">Transporte</option>
-                            <option value="hospedaje">Hospedaje</option>
-                            <option value="otros">Otros</option>
-                        </select>
-                    </div>
-    
-                    <div class="contenedor-input">
-                        <label for="consulta">En caso de que sea necesario, puede adjuntarnos una imagen del hotel en cuestion. El formato aceptado es JPG y PNG.</label>
-                        <br>
-                        <input type="file" id="consulta" name="consulta" accept="img/jpg, img/png">
-                    </div>
-    
-                    <div class="contenedor-input">
-                        <span>Consulta</span>
-                        <textarea name="consulta" id="color" required></textarea>
-                    </div>
-    
-                    <div class="botones">
-                        <input type="submit" id="enviar" value="Enviar" class="btnForm"/>
-                        <input type="reset" id="borrar" value="Borrar" class="btnForm"/>
-                    </div>
-                    
-                </form>
-            </div>
-            
-        </div>
+            </section>
 
-        <h3 class="textoFinal">Final - DaVinci 2023 - Desarrollado por Archilli Matias para la materia Maquetado y Desarrollo WEB. Docente a cargo: Mabel garcia.</h3>
+        </main>
 
         <footer>
-                <div class="contenedorFooter">
-                    <h3 class="tituloFooter">Contacto</h3>
-                    <ul>
-                        <li> info@egipto.com.ar</li>
-                        <li> Calle falsa 123, CABA</li>
-                    </ul>
-                </div>
-                <div class="contenedorFooter">
-                    <h3 class="tituloFooter">Siguenos</h3>
-                    <ul>
-                        <li class="redes"><a href="https://www.instagram.com/" target="_blank"><img src="../img/redes/instagram.png" alt="Instagram" style="height: 50px; width: 50px;"></a></li>
-                        <li class="redes"><a href="https://www.WhatsApp.com/" target="_blank"><img src="../img/redes/whatsapp.png" alt="WhatsApp" style="height: 50px; width: 50px;"></a></li>
-                        <li class="redes"><a href="https://www.facebook.com/" target="_blank"><img src="../img/redes/facebook.png" alt="Facebook" style="height: 50px; width: 50px;"></a></li>
-                    </ul>
-                </div>
-                <div class="contenedorFooter">
-                    <h3 class="tituloFooter">Derechos</h3>
-                    <ul>
-                        <li>Diseñado por Archilli Matias</li>
-                    </ul>
-                </div>
+            <div class="contenedorFooter">
+                <h3 class="tituloFooter">Contacto</h3>
+                <ul>
+                    <li> info@egipto.com.ar</li>
+                    <li> Calle falsa 123, CABA</li>
+                </ul>
+            </div>
+            <div class="contenedorFooter">
+                <h3 class="tituloFooter">Síguenos</h3>
+                <ul>
+                    <li class="redes"><a href="https://www.instagram.com/" target="_blank"><img src="../img/redes/instagram.png" alt="Instagram" style="height: 50px; width: 50px;"></a></li>
+                    <li class="redes"><a href="https://www.WhatsApp.com/" target="_blank"><img src="../img/redes/whatsapp.png" alt="WhatsApp" style="height: 50px; width: 50px;"></a></li>
+                    <li class="redes"><a href="https://www.facebook.com/" target="_blank"><img src="../img/redes/facebook.png" alt="Facebook" style="height: 50px; width: 50px;"></a></li>
+                </ul>
+            </div>
+            <div class="contenedorFooter">
+                <h3 class="tituloFooter">Derechos</h3>
+                <ul>
+                    <li>Diseñado por Archilli Matias</li>
+                </ul>
+            </div>
         </footer>
-
     </div>
 </body>
 </html>
