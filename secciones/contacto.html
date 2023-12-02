@@ -36,15 +36,18 @@
                             <h2 class="titulos">Contáctanos</h2>
                             <p class="textos">Si tienes alguna consulta puntual, completa el formulario y nos pondremos en contacto contigo.</p>
                         </div>
+
                         <form action="http://recursos.grodriguez.com.ar/FORM/" method="post" enctype="multipart/form-data">
                             <div class="contenedor-input">
                                 <span>Nombre</span>
                                 <input type="text" name="nombre" placeholder="Ingrese su Nombre" class="inputForm" required/>
                             </div>
+
                             <div class="contenedor-input">
                                 <span>Email</span>
                                 <input type="text" name="email" placeholder="ejemplo@mail.com" class="inputForm" required/>
                             </div>
+
                             <div class="contenedor-input">
                                 <span>Tipo de consulta</span>
                                 <select name="tipoConsulta" class="inputForm" required>
@@ -55,11 +58,29 @@
                                     <option value="otros">Otros</option>
                                 </select>
                             </div>
+
                             <div class="contenedor-input">
-                                <label for="consulta">En caso de que sea necesario, puedes adjuntarnos una imagen del hotel en cuestión. El formato aceptado es JPG y PNG.</label>
+                                <label for="consulta">En caso de que sea necesario, puedes adjuntarnos una imagen. El formato aceptado es JPG y PNG.</label>
                                 <br>
                                 <input type="file" id="consulta" name="consulta" accept="img/jpg, img/png">
                             </div>
+
+                            <div class="contenedor-input">
+                                <span>Intereses sobre Egipto</span>
+                                <label>
+                                    <input type="checkbox" name="interesEgipto[]" value="historia">
+                                    Historia
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="interesEgipto[]" value="cultura">
+                                    Cultura
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="interesEgipto[]" value="aventura">
+                                    Aventura
+                                </label>
+                            </div>
+
                             <div class="contenedor-input">
                                 <span>Consulta</span>
                                 <textarea name="consulta" id="color" required></textarea>
