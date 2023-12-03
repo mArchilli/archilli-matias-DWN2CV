@@ -5,6 +5,18 @@
     font-family: 'Roboto Slab', serif, 'Times New Roman', Times, serif, Verdana, Tahoma, sans-serif;
 }
 
+#redes-Instagram{
+    background-image: url('../img/redes/instagram.png');
+}
+
+#redes-WhatsApp{
+    background-image: url('../img/redes/whatsapp.png');
+}
+
+#redes-Facebook{
+    background-image: url('../img/redes/facebook.png');
+}
+
 .textos q {
     display: block;
     font-style: italic;
@@ -20,6 +32,14 @@
 
 .agradecimiento {
     margin-top: 50px;
+}
+
+.icono-red-social {
+    display: block;
+    width: 50px; /* ajusta según sea necesario */
+    height: 50px; /* ajusta según sea necesario */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .volver-btn {
