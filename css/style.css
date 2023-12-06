@@ -304,11 +304,15 @@ footer li a{
 
 .btnForm{
     border-radius: 5px;
-    background-color: white;
-    height: 2rem;
+    background-color: #ffffff;
     padding: 0.5rem 1rem;
     text-align: center;
-    align-items: center;
+}
+
+.btnForm:hover{
+    background-color:#ffb347;
+    border: 1px solid black;
+    cursor: pointer;
 }
 
 form{
@@ -344,6 +348,26 @@ form span{
 #titulo-hospedajeDesktop{
     display: none;
 }
+
+/* Estilos personalizados para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  /* Microsoft Edge y navegadores basados en Chromium */
+  * {
+    scrollbar-color: #333 #f1f1f1;
+    scrollbar-width: thin;
+  }
 
 @media screen and (min-width:576px) { 
     .principal{
