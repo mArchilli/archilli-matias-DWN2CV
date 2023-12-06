@@ -38,7 +38,8 @@
                         </div>
                         
                                 <!-- action="http://recursos.grodriguez.com.ar/FORM/" -->
-                         <form action="../procesar_datos.php" method="post" enctype="multipart/form-data" id="formContacto"> 
+                                <!-- action="../procesar_datos.php" method="post enctype="multipart/form-data""  -->
+                         <form action="../gracias.html" id="formContacto"> 
                             <div class="contenedor-input">
                                 <span>Nombre</span>
                                 <input type="text" name="nombre" placeholder="Ingrese su Nombre" class="inputForm" required/>
@@ -124,15 +125,5 @@
             </div>
         </footer>
     </div>
-
-    <script>
-        // Agrega este script para mostrar un mensaje después de enviar el formulario
-        const formulario = document.querySelector('#formContacto');
-
-        formulario.addEventListener('submit', function (event) {
-            // Puedes agregar aquí lógica adicional antes de mostrar el mensaje
-            alert('¡La acción fue completada!');
-        });
-    </script>
 </body>
 </html>

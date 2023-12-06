@@ -30,10 +30,6 @@
     border-radius: 5px;
 }
 
-.agradecimiento {
-    margin-top: 50px;
-}
-
 .icono-red-social {
     display: block;
     width: 50px; /* ajusta según sea necesario */
@@ -43,19 +39,20 @@
 }
 
 .volver-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: 5px;
     background-color: #ffb347;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
+    padding: 0.5rem 1rem;
+    text-align: center;
 }
 
 .mainGracias{
     text-align: center;
-    margin: 5rem;
+    margin: 5rem 1rem;
+}
+
+.agradecimiento{
+    margin: 1rem;
 }
 
 body{
