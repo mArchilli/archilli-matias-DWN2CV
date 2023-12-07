@@ -1,6 +1,7 @@
 Alumno: Archilli Matias
 DNI: 42.536.278
-Fecha de final: 03/08/2023
+Fecha de final: 11/12/2023
 Docente Mabel Garcia
 Carrera: Diseño y Desarrollo WEB
-Cursado en 1er cuatrimestr, Agosto 2022.
+Turno: Noche
+Cursado en 1er cuatrimestre, Agosto 2022.
