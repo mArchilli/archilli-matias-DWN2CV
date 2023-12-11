@@ -325,6 +325,10 @@ form span{
     display: none;
 }
 
+#tituloImagenesHome{
+    display: none;
+}
+
 @media screen and (min-width:576px) { 
     .principal{
         max-width: 900px;
@@ -349,12 +353,16 @@ form span{
     
 }
 
-@media screen and (min-width:990px) { 
+@media screen and (min-width:1280px) { 
     .principal{
         max-width: 1280px;
         height: 100%;
         margin: 0 auto;
         background-color: white;
+    }
+
+    #tituloImagenesHome{
+        display: block;
     }
 
     .contenedor-banner{ 

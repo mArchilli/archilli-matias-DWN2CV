@@ -1,0 +1,22 @@
+
+-Aprovecha la etiqueta PICTURE para definir
+distintas imágenes según el breakpoint
+
+-Entrega los Diseños solictados jpg y PSD
+
+-Entrega los textos de la web (solo los textos,
+sin menúes ni fotos)
+
+-Imágenes redimensionadas con
+WIDTH/HEIGHT o pesan más de 300KB (sea
+IMG o Background)
+
+Los iconos presentan escalamientos miden 512px x 512px
+
+(escaladas a 50px x 50px).
+Hay imagenes pesadas, por ejemplo:
+cairo.png pesa 334KB, templo.png 388KB, Giza-max.png
+436KB, Karnak-max.png 369KB, etc. Hay que optimizar peso
+para web
+
+-El indice del informe no coincide con lo desarrollado en los items
