@@ -2,6 +2,11 @@
     echo "<pre>";
     print_r($_POST);
     echo "</pre>";
+
+    // Establecer la configuración de SMTP y smtp_port
+    ini_set("SMTP", "smtp.example.com");
+    ini_set("smtp_port", "587");
+
     // Recibir datos del formulario
     $nombre = $_POST["nombre"];
     $email = $_POST["email"];
@@ -11,7 +16,7 @@
 
     // Configurar destinatario y asunto
     $destinatario = "matiarchilli@gmail.com"; // Reemplazar con tu dirección de correo electrónico
-    $asunto = "Nuevo formulario de contacto desde el sitio web";
+    $asunto = "Envio de datos por correo electronico - Final de Maquetado y Desarrollo Web";
 
     // Construir el cuerpo del mensaje
     $mensaje = "Nombre: $nombre\n";
@@ -24,7 +29,7 @@
     mail($destinatario, $asunto, $mensaje);
 
     // Redirigir a la página de gracias
-    header("Location: gracias.html");
+    header("Location: ./gracias.html");
     exit;
 
 ?>

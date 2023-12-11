@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Gracias por tu consulta</title>
 </head>
 <body>
     <div class="principal">
         <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="secciones/ciudades.html">Ciudades</a></li>
+                    <li><a href="secciones/transporte.html">Transporte</a></li>
+                    <li><a href="secciones/hospedaje.html">Hospedaje</a></li>
+                    <li><a href="secciones/contacto.html" id="NavSeleccionado">Contacto</a></li>
+                </ul>
+            </nav>
             <h1 class="header-contacto">Gracias por tu consulta</h1>
         </header>
+
         <main class="mainGracias">
             <h2 class="titulos">Gracias por enviarnos tu comentario!</h2>
             <section class="formulario">
                 <p class="textos agradecimiento">Hemos recibido tu consulta y nos pondremos en contacto contigo pronto.</p>
-                <a href="../index.html" class="volver-btn">Volver al inicio</a>
+                <a href="./index.html" class="volver-btn">Volver al inicio</a>
             </section>
         </main>
         <footer>
@@ -29,9 +41,9 @@
             <div class="contenedorFooter">
                 <h2 class="tituloFooter">Siguenos</h2>
                 <ul>
-                    <li class="redes"><a href="https://www.instagram.com/" target="_blank"><img src="../img/redes/instagram.png" alt="Instagram" style="height: 50px; width: 50px;"></a></li>
-                    <li class="redes"><a href="https://www.WhatsApp.com/" target="_blank"><img src="../img/redes/whatsapp.png" alt="WhatsApp" style="height: 50px; width: 50px;"></a></li>
-                    <li class="redes"><a href="https://www.facebook.com/" target="_blank"><img src="../img/redes/facebook.png" alt="Facebook" style="height: 50px; width: 50px;"></a></li>
+                    <li class="redes"><a href="https://www.instagram.com/" target="_blank" class="icono-red-social" id="redes-Instagram"></a></li>
+                    <li class="redes"><a href="https://www.WhatsApp.com/" target="_blank" class="icono-red-social" id="redes-WhatsApp"></a></li>
+                    <li class="redes"><a href="https://www.facebook.com/" target="_blank" class="icono-red-social" id="redes-Facebook"></a></li>
                 </ul>
             </div>
             <div class="contenedorFooter">
@@ -40,7 +52,7 @@
                     <li>Diseñado por Archilli Matias</li>
                 </ul>
             </div>
-    </footer>
+        </footer>
     </div>
 </body>
 </html>
